@@ -1,0 +1,110 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                { "slug": "navy",       "color": "#1a3a5c", "name": "Navy" },
+                { "slug": "blue",       "color": "#0ea5e9", "name": "Blue" },
+                { "slug": "blue-dark",  "color": "#0369a1", "name": "Blue Dark" },
+                { "slug": "green",      "color": "#16a34a", "name": "Green" },
+                { "slug": "red",        "color": "#dc2626", "name": "Red" },
+                { "slug": "background", "color": "#f8fafc", "name": "Background" },
+                { "slug": "white",      "color": "#ffffff", "name": "White" },
+                { "slug": "text",       "color": "#0f172a", "name": "Text" },
+                { "slug": "muted",      "color": "#64748b", "name": "Muted" }
+            ],
+            "background": true,
+            "text": true,
+            "link": true
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif",
+                    "slug": "japanese",
+                    "name": "Japanese"
+                },
+                {
+                    "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+                    "slug": "system",
+                    "name": "System"
+                }
+            ],
+            "fontSizes": [
+                { "slug": "small",   "size": "0.875rem", "name": "Small" },
+                { "slug": "medium",  "size": "1rem",     "name": "Medium" },
+                { "slug": "large",   "size": "1.125rem", "name": "Large" },
+                { "slug": "x-large", "size": "1.5rem",   "name": "XLarge" },
+                { "slug": "xx-large","size": "2rem",     "name": "XXLarge" }
+            ],
+            "fluid": true
+        },
+        "spacing": {
+            "spacingScale": {
+                "operator": "*",
+                "increment": 1.5,
+                "steps": 7,
+                "mediumStep": 1.5,
+                "unit": "rem"
+            },
+            "units": ["px", "em", "rem", "%", "vw"]
+        },
+        "layout": {
+            "contentSize": "720px",
+            "wideSize": "1100px"
+        },
+        "border": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "#f8fafc",
+            "text": "#0f172a"
+        },
+        "typography": {
+            "fontFamily": "'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif",
+            "fontSize": "1rem",
+            "lineHeight": "1.8"
+        },
+        "spacing": {
+            "blockGap": "1.5rem"
+        },
+        "elements": {
+            "link": {
+                "color": { "text": "#0ea5e9" },
+                ":hover": {
+                    "color": { "text": "#0369a1" }
+                }
+            },
+            "h1": {
+                "typography": {
+                    "fontSize": "clamp(1.75rem, 5vw, 2.5rem)",
+                    "fontWeight": "800",
+                    "lineHeight": "1.25",
+                    "letterSpacing": "-0.02em"
+                },
+                "color": { "text": "#1a3a5c" }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "clamp(1.25rem, 3vw, 1.5rem)",
+                    "fontWeight": "700",
+                    "lineHeight": "1.4"
+                },
+                "color": { "text": "#1a3a5c" }
+            },
+            "h3": {
+                "typography": {
+                    "fontSize": "1.15rem",
+                    "fontWeight": "600"
+                },
+                "color": { "text": "#1a3a5c" }
+            }
+        }
+    }
+}
